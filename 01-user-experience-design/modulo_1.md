@@ -17,10 +17,10 @@ Después de completar este curso, debería poder:
 - Revisar un ejemplo de caso práctico de diseño de UX para sacar conclusiones sobre la definición de requisitos.
 
 
-![alt text](<Captura de pantalla 2025-03-09 124103.png>)
+![alt text](image.png)
 
 
-![alt text](<Captura de pantalla 2025-03-12 152312.png>)
+![alt text](image-1.png)
 
 
-![alt text](<Captura de pantalla 2025-03-12 152321.png>)
+![alt text](image-2.png)
