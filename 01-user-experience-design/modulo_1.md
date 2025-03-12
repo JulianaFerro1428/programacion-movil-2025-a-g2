@@ -16,5 +16,11 @@ Después de completar este curso, debería poder:
 - Explicar qué es un caso práctico en el diseño de UX y los pasos para crearlo.
 - Revisar un ejemplo de caso práctico de diseño de UX para sacar conclusiones sobre la definición de requisitos.
 
+![alt text](Imagenes/Modulo1Reseña.png)
 
+
+![alt text](Imagenes/Modulo1Certificado.png)
+
+
+![alt text](Imagenes/Modulo1Fin.png)
 
