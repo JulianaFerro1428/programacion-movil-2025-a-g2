@@ -21,13 +21,3 @@ Después de completar este curso, debería poder:
 - Analizar un ejemplo de caso práctico de UX para sacar conclusiones sobre la investigación de usuarios, la creación de usuarios prototipo y la investigación de la competencia.
 
 
-![alt text](<Captura de pantalla 2025-03-11 110804.png>)
-
-
-![alt text](<Captura de pantalla 2025-03-11 111503.png>)
-
-
-![alt text](<Captura de pantalla 2025-03-12 152742.png>)
-
-
-![alt text](<Captura de pantalla 2025-03-12 152751.png>)

@@ -19,3 +19,5 @@ Después de completar este curso, debería poder:
 - Identificar los pasos para planificar y desarrollar una sesión de creación de bocetos en colaboración.
 - Explicar la metodología ágil y su importancia.
 - Analizar un ejemplo de caso práctico de diseño de UX para sacar conclusiones sobre la creación de historias de usuarios, recorrido de usuario, flujos de usuario y bocetos de soluciones.
+
+

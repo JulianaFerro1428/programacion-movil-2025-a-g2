@@ -17,10 +17,4 @@ Después de completar este curso, debería poder:
 - Revisar un ejemplo de caso práctico de diseño de UX para sacar conclusiones sobre la definición de requisitos.
 
 
-![alt text](image.png)
 
-
-![alt text](image-1.png)
-
-
-![alt text](image-2.png)
