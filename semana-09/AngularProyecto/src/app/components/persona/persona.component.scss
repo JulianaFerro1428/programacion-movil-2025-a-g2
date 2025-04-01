@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 350px; // Se agrega altura mínima para evitar que los elementos colapsen
+    padding: 20px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    width: 80%;
+    text-align: left;
+}
+
+input, select {
+    width: 80% !important;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #0f0f0f;
+    border-radius: 5px;
+    color: black !important;
+    background-color: white !important;
+    display: block !important;
+}
+
+.buttons {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    min-width: 100px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:nth-child(1) { background: #28a745; color: white; } /* Agregar */
+button:nth-child(2) { background: #ffc107; color: black; } /* Modificar */
+button:nth-child(3) { background: #dc3545; color: white; } /* Eliminar */
+button:nth-child(4) { background: #007bff; color: white; } /* Consultar */

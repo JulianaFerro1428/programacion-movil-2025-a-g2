@@ -1,0 +1,29 @@
+<app-persona></app-persona><ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Enfermero
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <!-- Reutilizamos el componente PersonaComponent -->
+    <app-persona></app-persona>
+  
+    <!-- Campos adicionales para Enfermero -->
+    <ion-item>
+      <ion-label position="floating">Horario laboral</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Extension telefonica</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <!-- Botón de guardar (solo visual, sin lógica) -->
+    <ion-button>
+      Guardar
+    </ion-button>
+  </ion-content>
+  
