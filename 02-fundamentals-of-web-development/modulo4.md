@@ -13,7 +13,6 @@ Al finalizar este curso, será capaz de:
 - Comparar y contrastar distintos modelos de programación.
 - Explicar cómo utilizar objetos de código.
 - Describir el funcionamiento de las variables, las funciones, las expresiones, los operadores y los sucesos en el código JavaScript para sitios web dinámicos.
-- Definir los tipos de datos más comunes.
 - Identificar las cuatro funciones principales de una base de datos.
 - Reconocer una sintaxis MySQL básica para crear una base de datos y trabajar con los datos.
 - Explicar la finalidad y la función de Node.js.
