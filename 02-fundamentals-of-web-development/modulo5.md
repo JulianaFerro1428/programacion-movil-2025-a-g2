@@ -19,7 +19,7 @@ Después de completar este curso, será capaz de:
 - Diferenciar entre contenedores y máquinas virtuales.
 - Identificar los métodos y las herramientas más comunes para probar y automatizar el despliegue de sitios web.
 - Explicar la computación en la nube para el desarrollo y despliegue web.
-- Explicar la inclusión en contenedores para el desarrollo y el despliegue de sitios web.
+
 
 ## Requisitos previos
 
