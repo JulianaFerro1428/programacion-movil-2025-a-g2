@@ -49,11 +49,5 @@ Si aún no cuenta con estos conocimientos, puede adquirirlos completando los cur
 - Roles complementarios: gerentes de proyecto, analistas de negocio, diseñadores gráficos, especialistas en marketing digital.
 - Cómo colaborar eficazmente en equipos multidisciplinarios.
 
-### 5. Recursos y aprendizaje continuo
-- Plataformas de aprendizaje en línea: cursos, tutoriales y certificaciones.
-- Comunidades y foros de desarrolladores: GitHub, Stack Overflow, Reddit.
-- Conferencias, webinars y eventos de la industria.
-- Blogs y podcasts especializados en desarrollo web.
-
 ![alt text](imagenes/ExamenMod7.png)
 ![alt text](imagenes/FinalCursoMod7.png)
