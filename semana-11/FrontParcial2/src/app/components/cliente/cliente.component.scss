@@ -1,0 +1,39 @@
+ion-card {
+    margin: 1rem auto;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  
+    ion-card-header {
+      background-color: #007bff;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+  
+      ion-card-title {
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0.5rem 0;
+      }
+    }
+  
+    ion-card-content {
+      padding: 1rem;
+  
+      ion-item {
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+          transform: scale(1.01);
+        }
+  
+        ion-input {
+          --padding-start: 8px;
+        }
+      }
+    }
+  }
+  

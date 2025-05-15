@@ -1,0 +1,38 @@
+ion-card {
+    margin: 1rem auto;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+    ion-card-header {
+      background-color: #28a745;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+  
+      ion-card-title {
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0.5rem 0;
+      }
+    }
+  
+    ion-card-content {
+      padding: 1rem;
+  
+      ion-item {
+        border-radius: 8px;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          box-shadow: 0 0 6px rgba(40, 167, 69, 0.3);
+          transform: scale(1.01);
+        }
+  
+        ion-select {
+          width: 100%;
+        }
+      }
+    }
+  }
+  

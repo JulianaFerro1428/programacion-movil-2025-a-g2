@@ -1,0 +1,25 @@
+<ion-app>
+  <!-- Menú lateral (opcional) -->
+  <ion-menu side="start" menuId="first" contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menú</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <!-- Aquí se puede poner una lista de enlaces o botones de navegación -->
+      <ion-list>
+        <ion-item routerLink="/home">Inicio</ion-item>
+        <ion-item routerLink="/mesa">Seleccionar Mesa</ion-item>
+        <ion-item routerLink="/cliente">Cliente</ion-item>
+        <ion-item routerLink="/fecha">Fecha</ion-item>
+        <!-- Otros enlaces de navegación -->
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!-- Contenido principal donde se cargan las vistas de las rutas -->
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+
+
+</ion-app>
