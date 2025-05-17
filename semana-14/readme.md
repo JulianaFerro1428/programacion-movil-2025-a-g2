@@ -20,3 +20,7 @@ En esta clase, realizamos exposiciones prácticas sobre cómo conectar el backen
    - Cada framework tiene sus ventajas y desventajas, pero todos permiten una integración eficiente con el backend.
    - La elección del framework depende de las necesidades del proyecto y la experiencia del equipo.
 
+## Link de los repositorios de las exposiciones
+- https://github.com/Oscarsl10/Backend-Ionic_angular.git
+
+- https://github.com/BondrewdXD/ElectroCorhuila.git
