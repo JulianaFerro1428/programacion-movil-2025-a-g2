@@ -1,0 +1,103 @@
+.form-container {
+  background: linear-gradient(135deg, #e6f2ff, #ffffff);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 420px;
+  margin: 40px auto;
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+  border: 1px solid #b3daff;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-top: 15px;
+  display: block;
+  color: #0056b3;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #66b3ff;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  outline: none;
+  background-color: #f9fcff;
+  color: #002244;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+
+  &:focus {
+    border-color: #3399ff;
+    box-shadow: 0 0 0 3px rgba(51, 153, 255, 0.2);
+  }
+
+  &::placeholder {
+    color: #002244;
+    opacity: 0.5;
+  }
+}
+
+.textarea-input {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #66b3ff;
+  color: #ffffff;
+  padding: 14px;
+  width: 100%;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+
+  &:hover {
+    background-color: #3399ff;
+    transform: scale(1.02);
+  }
+}
+
+.mensaje-modal {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cerrar-modal {
+  margin-left: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  color: #002244;
+  background-color: #f9fcff;
+
+  &::-webkit-calendar-picker-indicator {
+    filter: invert(0.6);
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-clear-button {
+    display: none;
+  }
+}
+
+html, body {
+  background-color: #f0f8ff !important;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

@@ -1,0 +1,95 @@
+.form-container {
+  background-color: #eaf1ff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: 600;
+  margin-top: 15px;
+  display: block;
+  color: #000c3b;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #42a1ff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;
+  color: #000; // ✅ Texto en negro
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: #000; // ✅ Placeholder en negro
+    opacity: 0.6; // Puedes ajustar la visibilidad
+  }
+}
+
+.textarea-input {
+  min-height: 80px;
+  resize: vertical;
+  color: #000; // ✅ Texto en negro
+  &::placeholder {
+    color: #000;
+    opacity: 0.6;
+  }
+}
+
+.submit-button {
+  background-color: #78b7ff;
+  color: #000c3b;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #5aa3ff;
+}
+
+.mensaje-modal {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+// Para el campo de fecha
+input[type="date"] {
+  color: #000; // Texto negro
+  &::-webkit-calendar-picker-indicator {
+    filter: invert(1);     // Hace el ícono oscuro (útil para fondos claros)
+    opacity: 1;             // Asegura que sea visible
+    cursor: pointer;
+  }
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-clear-button {
+    display: none; // Opcional, para limpiar el diseño
+  }
+}
+.cerrar-modal {
+  margin-left: 1rem;
+  padding: 0.3rem 0.6rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+

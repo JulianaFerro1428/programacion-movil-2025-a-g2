@@ -1,0 +1,27 @@
+<ion-content class="ion-padding">
+  <div class="form-container">
+    <form [formGroup]="tareaForm" (ngSubmit)="registrarTarea()">
+      <label class="form-label">Nombre de la tarea</label>
+      <input class="form-input" formControlName="fullname" type="text" />
+
+      <label class="form-label">Descripción</label>
+      <textarea class="form-input textarea-input" formControlName="description"></textarea>
+
+      <label class="form-label">Categoría</label>
+      <select class="form-input" formControlName="categoria">
+        <option value="" disabled selected>Selecciona una categoría</option>
+        <option value="HOGAR">🏠 Hogar</option>
+        <option value="ESCUELA">📚 Escuela</option>
+        <option value="UNIVERSIDAD">🎓 Universidad</option>
+        <option value="MERCADO">🛒 Mercado</option>
+        <option value="TRABAJO">💼 Trabajo</option>
+        <option value="PERSONAL">👤 Personal</option>
+      </select>
+
+      <label class="form-label">Fecha de creación</label>
+      <input class="form-input" formControlName="fechaCreacion" type="date" />
+
+      <button type="submit" class="submit-button">Crear Tarea</button>
+    </form>
+  </div>
+</ion-content>
