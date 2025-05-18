@@ -1,0 +1,69 @@
+<ion-content>
+  <div class="login-container">
+    <div class="logo-container">
+      <div class="logo">
+        <div class="logo-circle">
+          <img src="https://cdn-icons-png.freepik.com/256/15893/15893398.png?semt=ais_hybrid" class="logo-img" />
+        </div>
+        <h1>To-Do List</h1>
+      </div>
+    </div>
+    <div class="form-box">
+      <form [formGroup]="registerForm" (ngSubmit)="registrarUsuario()">
+        <label>
+          <span>Nombres</span>
+          <input formControlName="nombres" type="text" />
+          <div *ngIf="registerForm.get('nombres')?.invalid && registerForm.get('nombres')?.touched">
+            <small class="error">Este campo es obligatorio.</small>
+          </div>
+        </label>
+        <label>
+          <span>Apellidos</span>
+          <input formControlName="apellidos" type="text" />
+          <div *ngIf="registerForm.get('apellidos')?.invalid && registerForm.get('apellidos')?.touched">
+            <small class="error">Este campo es obligatorio.</small>
+          </div>
+        </label>
+        <label>
+          <span>Teléfono</span>
+          <input formControlName="phone" type="text" />
+          <div *ngIf="registerForm.get('phone')?.invalid && registerForm.get('phone')?.touched">
+            <small class="error" *ngIf="registerForm.get('phone')?.errors?.['required']">Este campo es obligatorio.</small>
+            <small class="error" *ngIf="registerForm.get('phone')?.errors?.['pattern']">El teléfono solo debe contener números.</small>
+          </div>
+        </label>
+        <label>
+          <span>Correo Electrónico</span>
+          <input formControlName="email" type="email" />
+          <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+            <small class="error" *ngIf="registerForm.get('email')?.errors?.['required']">Este campo es obligatorio.</small>
+            <small class="error" *ngIf="registerForm.get('email')?.errors?.['email']">Por favor, ingresa un correo electrónico válido.</small>
+          </div>
+        </label>
+        <label class="password-label">
+          <span>Contraseña</span>
+          <div class="password-input">
+            <input
+              [type]="showPassword ? 'text' : 'password'"
+              formControlName="contrasenia"
+            />
+            <ion-icon
+              name="{{ showPassword ? 'eye-off' : 'eye' }}"
+              (click)="togglePassword()"
+              class="eye-icon"
+            ></ion-icon>
+          </div>
+          <div *ngIf="registerForm.get('contrasenia')?.invalid && registerForm.get('contrasenia')?.touched">
+            <small class="error" *ngIf="registerForm.get('contrasenia')?.errors?.['required']">Este campo es obligatorio.</small>
+            <small class="error" *ngIf="registerForm.get('contrasenia')?.errors?.['minlength']">La contraseña debe tener al menos 6 caracteres.</small>
+          </div>
+        </label>
+        <button type="submit" class="register-button" [disabled]="registerForm.invalid">Registrarme</button>
+      </form>
+    </div>
+    <div class="register-prompt">
+      <span>¿Ya tienes una cuenta?</span>
+      <a (click)="irAlogin()">Inicia sesión</a>
+    </div>
+  </div>
+</ion-content>
