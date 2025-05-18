@@ -56,4 +56,4 @@ Para que esta funcionalidad sea considerada como completa, debe cumplir con los 
 
 El flujo final debe garantizar una experiencia de usuario fluida, rápida y segura, donde solo los usuarios registrados pueden acceder a su cuenta, con feedback claro en caso de error y protección contra vulnerabilidades comunes.
 
-![alt text](Imagen/login.png)
+![alt text](Imagen/Login.png)
