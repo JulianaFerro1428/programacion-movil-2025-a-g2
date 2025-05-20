@@ -61,7 +61,7 @@ form {
   flex-direction: column;
 }
 
-label {
+label, ion-label {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
@@ -72,13 +72,19 @@ label {
     margin-bottom: 6px;
   }
 
-  input {
+  ion-input {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #7fbdff;
     background-color: #fff;
     color: #000;
     font-size: 16px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --background: #fff;
+    --color: #000;
+    --border-radius: 10px;
+    --border: 1px solid #7fbdff;
   }
 }
 
@@ -87,7 +93,7 @@ label {
   display: flex;
   align-items: center;
 
-  input {
+  ion-input {
     flex: 1;
   }
 
@@ -132,4 +138,31 @@ label {
     font-weight: bold;
     cursor: pointer;
   }
+ion-input::part(native) {
+  background-color: white !important;
+  color: #000 !important;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #7fbdff;
+  font-size: 16px;
+}
+}
+ion-input::part(native) {
+  background-color: white !important;
+  color: #000 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Corrección específica para inputs autofill que aún muestran borde */
+input:-webkit-autofill,
+ion-input::part(native):-webkit-autofill {
+  border: none !important;
+  box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #000 !important;
 }

@@ -11,33 +11,33 @@
 
     <div class="form-box">
       <form (ngSubmit)="iniciarSesion(form)" #form="ngForm">
-        <label>
+        <ion-label>
           <span>Correo Electrónico</span>
-          <input
+          <ion-input
             name="email"
             [(ngModel)]="usuario.email"
-            required
             type="email"
-          />
-        </label>
+            required
+          ></ion-input>
+        </ion-label>
 
-        <label class="password-label">
+        <ion-label class="password-label">
           <span>Contraseña</span>
           <div class="password-input">
-            <input
+            <ion-input
               [type]="mostrarContrasenia ? 'text' : 'password'"
               [(ngModel)]="usuario.contrasenia"
               name="contrasena"
               required
               pattern="^(?=.*[A-Z])(?=.*\d).{6,}$"
-            />
+            ></ion-input>
             <ion-icon
               name="{{ mostrarContrasenia ? 'eye-off' : 'eye' }}"
               (click)="toggleMostrarContrasenia()"
               class="eye-icon"
             ></ion-icon>
           </div>
-        </label>
+        </ion-label>
 
         <button type="submit" class="login-button">Iniciar Sesión</button>
       </form>
