@@ -1,0 +1,119 @@
+/* Centrado absoluto */
+.form-content {
+  --background: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa toda la altura visible */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-center-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  background: linear-gradient(135deg, #e6f2ff, #ffffff);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+  border: 1px solid #b3daff;
+}
+
+/* Estilos de títulos */
+.section-title {
+  font-size: 1.4rem;
+  color: #0056b3;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #0056b3;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.section-heading {
+  font-size: 1.1rem;
+  color: #0056b3;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+/* Inputs */
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #66b3ff;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #f9fcff;
+  color: #002244;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: #3399ff;
+    box-shadow: 0 0 0 3px rgba(51, 153, 255, 0.2);
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #002244;
+    opacity: 0.5;
+  }
+}
+
+/* Textarea */
+.textarea-input {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Select personalizado */
+select.form-input {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23002244'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px;
+}
+
+/* Campo de fecha */
+input[type="date"] {
+  &::-webkit-datetime-edit {
+    color: #002244;
+    opacity: 0.5;
+  }
+  
+  &::-webkit-calendar-picker-indicator {
+    filter: invert(0.6);
+    opacity: 1;
+  }
+}
+
+/* Botón */
+.submit-button {
+  background-color: #66b3ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 14px;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #3399ff;
+  }
+}
