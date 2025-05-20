@@ -1,95 +1,114 @@
+.form-page {
+  --background: #f5f5f5;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+}
+
+.form-center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .form-container {
   background-color: #eaf1ff;
   padding: 30px;
   border-radius: 20px;
-  width: 90%;
-  max-width: 400px;
-  margin: 40px auto;
+  width: 100%;
+  max-width: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto; /* Centrado adicional */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .form-label {
-  font-weight: 600;
-  margin-top: 15px;
   display: block;
+  font-weight: 600;
   color: #000c3b;
+  margin-bottom: 8px;
+  font-size: 16px;
 }
 
 .form-input {
   width: 100%;
-  padding: 10px 14px;
+  padding: 12px 14px;
   border: 1px solid #42a1ff;
   border-radius: 10px;
-  margin-bottom: 10px;
   font-size: 16px;
-  outline: none;
   background-color: #fff;
-  color: #000; // ✅ Texto en negro
+  color: #000;
   box-sizing: border-box;
-
-  &::placeholder {
-    color: #000; // ✅ Placeholder en negro
-    opacity: 0.6; // Puedes ajustar la visibilidad
-  }
 }
 
 .textarea-input {
-  min-height: 80px;
+  min-height: 100px;
   resize: vertical;
-  color: #000; // ✅ Texto en negro
-  &::placeholder {
+}
+
+select.form-input {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+input[type="date"] {
+  position: relative;
+  
+  &::-webkit-datetime-edit {
     color: #000;
-    opacity: 0.6;
+  }
+  
+  &::-webkit-calendar-picker-indicator {
+    background: transparent;
+    color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  
+  &::after {
+    content: "📅";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  &:focus {
+    &::after {
+      display: none;
+    }
   }
 }
 
 .submit-button {
-  background-color: #78b7ff;
-  color: #000c3b;
-  padding: 12px;
-  width: 100%;
-  font-size: 16px;
+  background-color: #42a1ff;
+  color: white;
   border: none;
   border-radius: 30px;
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  margin-top: 10px;
   transition: background-color 0.3s ease;
-  margin-top: 20px;
-}
-
-.submit-button:hover {
-  background-color: #5aa3ff;
-}
-
-.mensaje-modal {
-  margin-top: 20px;
-  text-align: center;
-  font-weight: bold;
-}
-// Para el campo de fecha
-input[type="date"] {
-  color: #000; // Texto negro
-  &::-webkit-calendar-picker-indicator {
-    filter: invert(1);     // Hace el ícono oscuro (útil para fondos claros)
-    opacity: 1;             // Asegura que sea visible
-    cursor: pointer;
-  }
-
-  &::-webkit-inner-spin-button,
-  &::-webkit-clear-button {
-    display: none; // Opcional, para limpiar el diseño
+  
+  &:hover {
+    background-color: #1e88e5;
   }
 }
-.cerrar-modal {
-  margin-left: 1rem;
-  padding: 0.3rem 0.6rem;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-
-
-

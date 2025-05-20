@@ -1,27 +1,59 @@
-<div class="form-container">
-  <form [formGroup]="tareaForm" (ngSubmit)="actualizarTarea()">
-    <label class="form-label">Nombre de la tarea</label>
-    <input class="form-input" formControlName="fullname" type="text" />
+<ion-content class="form-page">
+  <div class="center-container">
+    <div class="form-container">
+      <form [formGroup]="tareaForm" (ngSubmit)="actualizarTarea()">
+        <!-- Nombre de la tarea -->
+        <div class="form-group">
+          <h1 class="section-title">Nombre de la tarea</h1>
+          <input 
+            class="form-input"
+            formControlName="fullname" 
+            type="text">
+        </div>
 
-    <label class="form-label">Descripción</label>
-    <textarea class="form-input textarea-input" formControlName="description"></textarea>
+        <!-- Descripción -->
+        <div class="form-group">
+          <h2 class="section-subtitle">Descripción</h2>
+          <textarea 
+            class="form-input textarea-input"
+            formControlName="description"></textarea>
+        </div>
 
-    <label class="form-label">Categoría</label>
-    <select class="form-input" formControlName="categoria">
-      <option value="" disabled>Selecciona una categoría</option>
-      <option value="HOGAR">🏠 Hogar</option>
-      <option value="ESCUELA">📚 Escuela</option>
-      <option value="UNIVERSIDAD">🎓 Universidad</option>
-      <option value="MERCADO">🛒 Mercado</option>
-      <option value="TRABAJO">💼 Trabajo</option>
-      <option value="PERSONAL">👤 Personal</option>
-    </select>
+        <!-- Categoría -->
+        <div class="form-group">
+          <h3 class="section-heading">Categoría</h3>
+          <select 
+            class="form-input"
+            formControlName="categoria">
+            <option value="" disabled selected>Selecciona una categoría</option>
+            <option value="HOGAR">🏠 Hogar</option>
+            <option value="ESCUELA">📚 Escuela</option>
+            <option value="UNIVERSIDAD">🎓 Universidad</option>
+            <option value="MERCADO">🛒 Mercado</option>
+            <option value="TRABAJO">💼 Trabajo</option>
+            <option value="PERSONAL">👤 Personal</option>
+          </select>
+        </div>
 
-    <label class="form-label">Fecha de creación</label>
-    <input class="form-input" formControlName="fechaCreacion" type="date" />
+        <!-- Fecha de creación -->
+        <div class="form-group">
+          <h3 class="section-heading">Fecha de creación</h3>
+          <input 
+            class="form-input"
+            formControlName="fechaCreacion" 
+            type="date">
+        </div>
 
-    <button type="submit" class="submit-button" [disabled]="tareaForm.invalid">
-      Actualizar Tarea
-    </button>
-  </form>
-</div>
+        <!-- Línea divisoria -->
+        <div class="divider"></div>
+
+        <!-- Botón de enviar - Siempre habilitado -->
+        <button 
+          type="submit"
+          class="submit-button">
+          <strong>Actualizar Tarea</strong>
+        </button>
+      </form>
+    </div>
+  </div>
+</ion-content>
