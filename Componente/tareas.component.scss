@@ -1,37 +1,68 @@
+/* Centrado absoluto */
+.form-content {
+  --background: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa toda la altura visible */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-center-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Contenedor del formulario */
 .form-container {
   background: linear-gradient(135deg, #e6f2ff, #ffffff);
   padding: 30px;
   border-radius: 20px;
-  width: 90%;
-  max-width: 420px;
-  margin: 40px auto;
+  width: 100%;
   box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
   border: 1px solid #b3daff;
 }
 
-.form-label {
-  font-weight: 600;
-  margin-top: 15px;
-  display: block;
+/* Estilos de títulos */
+.section-title {
+  font-size: 1.4rem;
   color: #0056b3;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #0056b3;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.section-heading {
+  font-size: 1.1rem;
+  color: #0056b3;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+/* Inputs */
 .form-input {
   width: 100%;
-  padding: 10px 14px;
+  padding: 12px 14px;
   border: 2px solid #66b3ff;
   border-radius: 12px;
-  margin-bottom: 14px;
   font-size: 16px;
-  outline: none;
   background-color: #f9fcff;
   color: #002244;
+  margin-bottom: 16px;
   box-sizing: border-box;
-  transition: border-color 0.2s;
 
   &:focus {
     border-color: #3399ff;
     box-shadow: 0 0 0 3px rgba(51, 153, 255, 0.2);
+    outline: none;
   }
 
   &::placeholder {
@@ -40,64 +71,49 @@
   }
 }
 
+/* Textarea */
 .textarea-input {
   min-height: 80px;
   resize: vertical;
 }
 
-.submit-button {
-  background-color: #66b3ff;
-  color: #ffffff;
-  padding: 14px;
-  width: 100%;
-  font-size: 17px;
-  border: none;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s;
-
-  &:hover {
-    background-color: #3399ff;
-    transform: scale(1.02);
-  }
+/* Select personalizado */
+select.form-input {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23002244'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px;
 }
 
-.mensaje-modal {
-  margin-top: 20px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.cerrar-modal {
-  margin-left: 1rem;
-  padding: 0.4rem 0.8rem;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
+/* Campo de fecha */
 input[type="date"] {
-  color: #002244;
-  background-color: #f9fcff;
-
+  &::-webkit-datetime-edit {
+    color: #002244;
+    opacity: 0.5;
+  }
+  
   &::-webkit-calendar-picker-indicator {
     filter: invert(0.6);
     opacity: 1;
-    cursor: pointer;
-  }
-
-  &::-webkit-inner-spin-button,
-  &::-webkit-clear-button {
-    display: none;
   }
 }
 
-html, body {
-  background-color: #f0f8ff !important;
-  margin: 0;
-  padding: 0;
-  height: 100%;
+/* Botón */
+.submit-button {
+  background-color: #66b3ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 14px;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #3399ff;
+  }
 }
