@@ -1,0 +1,168 @@
+ion-content {
+  --background: white;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo-circle {
+    width: 160px;
+    height: 160px;
+    background-color: #11256e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .logo-img {
+    width: 50%;
+    height: auto;
+  }
+
+  h1 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #122671;
+  }
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  background-color: #e8f0fe;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label, ion-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  span {
+    font-weight: bold;
+    color: #0a1744;
+    margin-bottom: 6px;
+  }
+
+  ion-input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #7fbdff;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --background: #fff;
+    --color: #000;
+    --border-radius: 10px;
+    --border: 1px solid #7fbdff;
+  }
+}
+
+.password-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  ion-input {
+    flex: 1;
+  }
+
+  .eye-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    color: #7fbdff;
+    cursor: pointer;
+  }
+}
+
+.login-button {
+  background-color: #7fbdff;
+  color: #0a1744;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #5ca8e6;
+  }
+}
+
+.register-prompt {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  span {
+    margin-right: 5px;
+    color: #0a1744;
+  }
+
+  a {
+    color: #7fbdff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+ion-input::part(native) {
+  background-color: white !important;
+  color: #000 !important;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #7fbdff;
+  font-size: 16px;
+}
+}
+ion-input::part(native) {
+  background-color: white !important;
+  color: #000 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Corrección específica para inputs autofill que aún muestran borde */
+input:-webkit-autofill,
+ion-input::part(native):-webkit-autofill {
+  border: none !important;
+  box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #000 !important;
+}

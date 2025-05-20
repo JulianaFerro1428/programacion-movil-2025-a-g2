@@ -2,22 +2,12 @@ import { Injectable } from "@angular/core";
 import { Tarea } from "./tarea";
 import { HttpClient } from "@angular/common/http";
 import { BehaviorSubject, Observable, tap } from "rxjs";
-<<<<<<< HEAD
-import { environment } from 'src/environments/environment';
-
-@Injectable({
-  providedIn: 'root',
-})
-export class TareasService {
-  private urlEndpoint = `${environment.apiUrl}/todolist/tareas`;
-=======
 
 @Injectable({
   providedIn: 'root',   // Asegura que esté disponible en toda la app
 })
 export class TareasService {
   private urlEndpoint = 'http://localhost:8080/todolist/tareas';
->>>>>>> feature/HU-06
 
   private tareasSubject = new BehaviorSubject<Tarea[]>([]);
   tareas$ = this.tareasSubject.asObservable();
@@ -25,11 +15,7 @@ export class TareasService {
   constructor(private http: HttpClient) {}
 
   eliminarTareaAlFinalizar(id: number): Observable<void> {
-<<<<<<< HEAD
-    return this.http.delete<void>(`${this.urlEndpoint}/${id}/finalizar`);
-=======
     return this.http.delete<void>(`http://localhost:8080/todolist/tareas/${id}/finalizar`);
->>>>>>> feature/HU-06
   }
 
   obtenerTareas(): void {
@@ -41,11 +27,7 @@ export class TareasService {
       return;
     }
 
-<<<<<<< HEAD
-    const url = `${environment.apiUrl}/todolist/usuarios/${idUsuario}/tareas`;
-=======
     const url = `http://localhost:8080/todolist/usuarios/${idUsuario}/tareas`;
->>>>>>> feature/HU-06
 
     this.http.get<Tarea[]>(url).subscribe(data => {
       this.tareasSubject.next(data);
@@ -77,10 +59,7 @@ export class TareasService {
     );
   }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> feature/HU-06
   borrarTarea(id: number): Observable<any> {
     return this.http.delete(`${this.urlEndpoint}/${id}`);
   }
@@ -99,9 +78,5 @@ export class TareasService {
       })
     );
   }
-<<<<<<< HEAD
-}
-=======
 
 }
->>>>>>> feature/HU-06

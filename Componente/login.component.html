@@ -1,0 +1,51 @@
+<ion-content>
+  <div class="login-container">
+    <div class="logo-container">
+      <div class="logo">
+        <div class="logo-circle">
+          <img src="https://cdn-icons-png.freepik.com/256/15893/15893398.png?semt=ais_hybrid" class="logo-img" />
+        </div>
+        <h1>To-Do List</h1>
+      </div>
+    </div>
+
+    <div class="form-box">
+      <form (ngSubmit)="iniciarSesion(form)" #form="ngForm">
+        <ion-label>
+          <span>Correo Electrónico</span>
+          <ion-input
+            name="email"
+            [(ngModel)]="usuario.email"
+            type="email"
+            required
+          ></ion-input>
+        </ion-label>
+
+        <ion-label class="password-label">
+          <span>Contraseña</span>
+          <div class="password-input">
+            <ion-input
+              [type]="mostrarContrasenia ? 'text' : 'password'"
+              [(ngModel)]="usuario.contrasenia"
+              name="contrasena"
+              required
+              pattern="^(?=.*[A-Z])(?=.*\d).{6,}$"
+            ></ion-input>
+            <ion-icon
+              name="{{ mostrarContrasenia ? 'eye-off' : 'eye' }}"
+              (click)="toggleMostrarContrasenia()"
+              class="eye-icon"
+            ></ion-icon>
+          </div>
+        </ion-label>
+
+        <button type="submit" class="login-button">Iniciar Sesión</button>
+      </form>
+    </div>
+
+    <div class="register-prompt">
+      <span>¿No tienes cuenta?</span>
+      <a (click)="irARegistro()">Regístrate</a>
+    </div>
+  </div>
+</ion-content>
