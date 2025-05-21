@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+  <domain-config cleartextTrafficPermitted="false">
+    <domain includeSubdomains="true">192.168.11.237</domain>
+    <trust-anchors>
+      <!-- Confía en tu CA personalizada -->
+      <certificates src="@raw/mkcert" />
+      <!-- También confía en certificados del sistema -->
+      <certificates src="system" />
+    </trust-anchors>
+  </domain-config>
+</network-security-config>
