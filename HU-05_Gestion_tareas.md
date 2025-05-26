@@ -32,6 +32,10 @@ Para que esta funcionalidad sea considerada como completa, debe cumplir con los 
    - Si se intenta guardar una tarea con **campos vacíos**, se debe mostrar un **mensaje de error claro**.
    - Los mensajes de confirmación y errores deben ser **visibles y comprensibles**.
 
+5. **Fecha finalización:**
+   - El usuario puede visualizar cuando visualizó la tarea, con una fecha de cumplimiento.
+
+
 ---
 
 ### 🖥️ Frontend
